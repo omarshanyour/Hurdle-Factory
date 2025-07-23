@@ -4,95 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hurdle Factory</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f4f6f8;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
-
     header {
-      background-color: #002B5B;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    nav a {
-      margin-left: 30px;
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 100px 20px;
-      background-color: #E2E8F0;
-    }
-
-    .hero img {
-      max-width: 600px;
-      width: 90%;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin: 0;
-      color: #002B5B;
-    }
-
-    .hero p {
-      font-size: 20px;
-      color: #333;
-      margin-top: 10px;
-      max-width: 700px;
-    }
-
-    footer {
-      background-color: #002B5B;
-      color: white;
+      background-color: #1e1e1e;
       padding: 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #f5f5f5;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+    .section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+    .athletes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      padding: 40px;
+    }
+    .athlete {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .athlete:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+    .athlete img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Hurdle Factory</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Elite Hurdle Coaching by Coach Patricio</p>
   </header>
 
-  <section class="hero">
-    <img src="poster-hurdle-factory.png" alt="Hurdle Factory Poster">
-    <h2>Elevate Your Hurdling Game</h2>
-    <p>Professional training, coaching, and performance tools for elite hurdlers. Built for serious athletes ready to break limits.</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#athletes">Athletes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="home">
+    <img src="poster.png" alt="Hurdle Factory Poster" style="width:80%; max-width:900px; border-radius: 20px;" />
+  </section>
+
+  <section class="section" id="athletes">
+    <h2>Our Standout Athletes</h2>
+    <div class="athletes">
+
+      <div class="athlete">
+        <img src="morganherbst.png" alt="Morgan Herbst" />
+        <h3>Morgan Herbst</h3>
+        <p>Improved from 47s in 300mH freshman year to 39.6s. Now running 55s in 400mH at Arkansas.</p>
+      </div>
+
+      <div class="athlete">
+        <img src="linagates.png" alt="Karolina Gates" />
+        <h3>Karolina Gates</h3>
+        <p>Massive growth under Coach Patricio's training. From mid-pack to elite hurdler with collegiate offers.</p>
+      </div>
+
+      <div class="athlete">
+        <img src="gabithomas.png" alt="Gabi Thomas" />
+        <h3>Gabi Thomas (Grossmont)</h3>
+        <p>Transformed into a dominant force in CIF hurdles. Continues to break records with consistent PRs.</p>
+      </div>
+
+      <div class="athlete">
+        <img src="sterlingbryant.png" alt="Sterling Bryant" />
+        <h3>Sterling Bryant (Ramona)</h3>
+        <p>110mH: 13.6s. One of California's fastest. A product of focused technique and discipline.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Coach Patricio</h2>
+    <p>Email: <a href="mailto:coachpatricio@hurdlefactory.com" style="color:#f39c12;">coachpatricio@hurdlefactory.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/hurdlefactory" target="_blank" style="color:#f39c12;">@hurdlefactory</a></p>
   </section>
 
   <footer>
     &copy; 2025 Hurdle Factory. All rights reserved.
   </footer>
-
 </body>
 </html>
