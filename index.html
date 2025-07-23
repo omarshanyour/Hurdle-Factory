@@ -4,11 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hurdle Factory</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #002B5B;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #E2E8F0;
+    }
+
+    .hero img {
+      max-width: 600px;
+      width: 90%;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin: 0;
+      color: #002B5B;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #333;
+      margin-top: 10px;
+      max-width: 700px;
+    }
+
+    footer {
+      background-color: #002B5B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="poster-hurdle-factory.png" alt="Hurdle Factory Poster" class="hero-img" />
-  </div>
+
+  <header>
+    <h1>Hurdle Factory</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="hurdle-factory-poster.png" alt="Hurdle Factory Poster">
+    <h2>Elevate Your Hurdling Game</h2>
+    <p>Professional training, coaching, and performance tools for elite hurdlers. Built for serious athletes ready to break limits.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Hurdle Factory. All rights reserved.
+  </footer>
+
 </body>
 </html>
